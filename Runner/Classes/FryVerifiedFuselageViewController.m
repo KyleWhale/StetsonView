@@ -13,7 +13,7 @@
 
 @interface FryVerifiedFuselageViewController ()
 
-@property (nonatomic, strong) UIImageView *smanSpamm;
+@property (nonatomic, strong) UIImageView *frthPacificBothView;
 @property (nonatomic, strong) UIImageView *srisMountainMindView;
 @property (nonatomic, strong) UILabel *prgComplexOmitLabel;
 @property (nonatomic, strong) UILabel *prfixResidentStayLabel;
@@ -67,9 +67,9 @@
         make.width.height.equalTo(@50);
     }];
     
-    self.smanSpamm = [VrSteamedStetsonManager ecrGroundsmanSpamm];
-    [self.view addSubview:self.smanSpamm];
-    [self.smanSpamm mas_makeConstraints:^(MASConstraintMaker *make) {
+    self.frthPacificBothView = [VrSteamedStetsonManager ecrGroundsmanSpamm];
+    [self.view addSubview:self.frthPacificBothView];
+    [self.frthPacificBothView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(supprtRule.mas_bottom).offset(DVN_CONFECTION*10);
         make.left.mas_equalTo(MULTRCL_PARAGLIDER?(DVN_CONFECTION*50):(DVN_CONFECTION*20));
         make.right.mas_equalTo(MULTRCL_PARAGLIDER?(-DVN_CONFECTION*50):(-DVN_CONFECTION*20));
@@ -151,7 +151,7 @@
             }
         }
         NSString *corePrntut = ideaTrnslt[sntnlArea];
-        [self.smanSpamm setImageURL:[NSURL URLWithString:corePrntut]];
+        [self.frthPacificBothView setImageURL:[NSURL URLWithString:corePrntut]];
         if (sntnlArea == 0) {
             self.prgComplexOmitLabel.text = OVERCONFIDENT_CORPORATE(870);
             self.prfixResidentStayLabel.text = OVERCONFIDENT_CORPORATE(836);

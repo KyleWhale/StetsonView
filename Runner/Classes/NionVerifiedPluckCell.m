@@ -19,11 +19,11 @@
     
     CGFloat cnvrtDesk = 1;
     
-    UIView *coreRchv = [[UIView alloc] init];
-    coreRchv.backgroundColor = [UIColor whiteColor];
-    coreRchv.cornerRadius = 3*cnvrtDesk;
-    [self.contentView addSubview:coreRchv];
-    [coreRchv mas_makeConstraints:^(MASConstraintMaker *make) {
+    self.coreRchv = [[UIView alloc] init];
+    self.coreRchv.backgroundColor = [UIColor whiteColor];
+    self.coreRchv.cornerRadius = 3*cnvrtDesk;
+    [self.contentView addSubview:self.coreRchv];
+    [self.coreRchv mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(16);
         make.top.mas_equalTo(6);
         make.width.height.mas_equalTo(@(6*cnvrtDesk));

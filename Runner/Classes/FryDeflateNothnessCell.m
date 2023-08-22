@@ -185,7 +185,7 @@
     }
 }
 
-- (void)saintNomadCaramel:(NSArray *)prducWarn andCrtnFast:(NSArray *)crtnFast {
+- (void)saintNomadCaramel:(NSArray *)prducWarn andBjctPrimaryMuch:(NSArray *)crtnFast {
     
     self.wtchNecessaryTaskArray = prducWarn;
     self.brwsComprisePlusArray = crtnFast;

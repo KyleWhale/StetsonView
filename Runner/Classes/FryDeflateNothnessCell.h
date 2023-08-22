@@ -23,7 +23,7 @@ typedef void(^blckCertainAlsoBlock)(NSDictionary *wiseDcumnt);
 
 @property (nonatomic, copy) dcidAdequateTimeBlock shildClockwiseSaveBlock;
 
-- (void)saintNomadCaramel:(NSArray *)prducWarn andCrtnFast:(NSArray *)crtnFast;
+- (void)saintNomadCaramel:(NSArray *)prducWarn andBjctPrimaryMuch:(NSArray *)crtnFast;
 
 @end
 

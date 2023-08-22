@@ -25,7 +25,7 @@
 @property (nonatomic, strong) NSArray                * lctResidentTreeArray;
 @property (nonatomic, assign) BOOL                     shrNecessarySoft;
 @property (nonatomic, assign) NSInteger                slctElementRoll;
-@property (nonatomic, strong) YYLabel                * titleLabel;
+@property (nonatomic, strong) YYLabel                * rchAccuracyWideLabel;
 
 @end
 
@@ -337,7 +337,7 @@
         return lgnmntName;
     } else if (wareRutn.section == 1) {
         FryDeflateNothnessCell *lgnmntName = [talkMuntn dequeueReusableCellWithReuseIdentifier:NSStringFromClass([FryDeflateNothnessCell class]) forIndexPath:wareRutn];
-        [lgnmntName saintNomadCaramel:self.chicImplementLookArray andCrtnFast:self.brwsComprisePlusArray];
+        [lgnmntName saintNomadCaramel:self.chicImplementLookArray andBjctPrimaryMuch:self.brwsComprisePlusArray];
         __weak typeof(self) spllAutoindexStep = self;
         lgnmntName.cntRoutineSoftType = ^(NSInteger type) {
             spllAutoindexStep.shrNecessarySoft = type == 1;
@@ -388,8 +388,8 @@
         }
         return CGSizeMake(SRN_DATABANK, 457);
     }
-    self.titleLabel.attributedText = self.lctResidentTreeArray[wareRutn.row];
-    return CGSizeMake(SRN_DATABANK, [self.titleLabel sizeThatFits:CGSizeMake(SRN_DATABANK - 32 - 16, MAXFLOAT)].height);
+    self.rchAccuracyWideLabel.attributedText = self.lctResidentTreeArray[wareRutn.row];
+    return CGSizeMake(SRN_DATABANK, [self.rchAccuracyWideLabel sizeThatFits:CGSizeMake(SRN_DATABANK - 32 - 16, MAXFLOAT)].height);
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)talkMuntn layout:(UICollectionViewLayout *)unknwnRest insetForSectionAtIndex:(NSInteger)costDsppr {
@@ -480,6 +480,9 @@
         }
         
         for (NSDictionary *dict in ideaTrnslt) {
+            if (!dict || dict.count == 0) {
+                break;
+            }
             NSMutableDictionary *wthutVice = [NSMutableDictionary dictionaryWithCapacity:4];
             NSString *nvldUpon = dict[HABERDASHERY_SUMM((@[@380, @375]))];
             [wthutVice setObject:dict[HABERDASHERY_SUMM((@[@380, @375]))] forKey:HABERDASHERY_SUMM((@[@380, @375]))];
@@ -580,12 +583,19 @@
                 [self.brwsComprisePlusArray insertObject:[self bedlamThriveBurnish:ntrducPlus] atIndex:0];
                 NSMutableDictionary *pckgTiny = [NSMutableDictionary dictionaryWithDictionary:[fineRchv objectForKey:HABERDASHERY_SUMM((@[@377, @396]))]];
                 [pckgTiny setValue:HABERDASHERY_SUMM((@[@377, @396])) forKey:HABERDASHERY_SUMM((@[@387, @389, @386, @375, @392, @374, @391]))];
-                
-                [self.brwsComprisePlusArray insertObject:[self bedlamThriveBurnish:pckgTiny] atIndex:2];
+                if ([self.brwsComprisePlusArray count] > 2) {
+                    [self.brwsComprisePlusArray insertObject:[self bedlamThriveBurnish:pckgTiny] atIndex:2];
+                } else {
+                    [self.brwsComprisePlusArray addObject:[self bedlamThriveBurnish:pckgTiny]];
+                }
                 NSMutableDictionary *subscrptEasy = [NSMutableDictionary dictionaryWithDictionary:[fineRchv objectForKey:HABERDASHERY_SUMM((@[@377, @394]))]];
                 [subscrptEasy setValue:HABERDASHERY_SUMM((@[@377, @394])) forKey:HABERDASHERY_SUMM((@[@387, @389, @386, @375, @392, @374, @391]))];
                 
-                [self.brwsComprisePlusArray insertObject:[self bedlamThriveBurnish:subscrptEasy] atIndex:4];
+                if ([self.brwsComprisePlusArray count] > 4) {
+                    [self.brwsComprisePlusArray insertObject:[self bedlamThriveBurnish:subscrptEasy] atIndex:4];
+                } else {
+                    [self.brwsComprisePlusArray addObject:[self bedlamThriveBurnish:subscrptEasy]];
+                }
                 
                 NSMutableDictionary *rgnsWarn = [NSMutableDictionary dictionaryWithDictionary:[fineRchv objectForKey:HABERDASHERY_SUMM((@[@384, @386, @385, @391, @379]))]];
                 [rgnsWarn setValue:HABERDASHERY_SUMM((@[@384, @386, @385, @391, @379])) forKey:HABERDASHERY_SUMM((@[@387, @389, @386, @375, @392, @374, @391]))];
@@ -594,11 +604,18 @@
                 NSMutableDictionary *freeVlut = [NSMutableDictionary dictionaryWithDictionary:[fineRchv objectForKey:HABERDASHERY_SUMM((@[@396, @376, @372, @389]))]];
                 [freeVlut setValue:HABERDASHERY_SUMM((@[@396, @376, @372, @389])) forKey:HABERDASHERY_SUMM((@[@387, @389, @386, @375, @392, @374, @391]))];
                 
-                [self.chicImplementLookArray insertObject:[self bedlamThriveBurnish:freeVlut] atIndex:2];
+                if ([self.chicImplementLookArray count] > 2) {
+                    [self.chicImplementLookArray insertObject:[self bedlamThriveBurnish:freeVlut] atIndex:2];
+                } else {
+                    [self.chicImplementLookArray addObject:[self bedlamThriveBurnish:freeVlut]];
+                }
                 NSMutableDictionary *purpsRest = [NSMutableDictionary dictionaryWithDictionary:[fineRchv objectForKey:HABERDASHERY_SUMM((@[@394, @376, @376, @382]))]];
                 [purpsRest setValue:HABERDASHERY_SUMM((@[@394, @376, @376, @382])) forKey:HABERDASHERY_SUMM((@[@387, @389, @386, @375, @392, @374, @391]))];
-                
-                [self.chicImplementLookArray insertObject:[self bedlamThriveBurnish:purpsRest] atIndex:4];
+                if ([self.chicImplementLookArray count] > 4) {
+                    [self.chicImplementLookArray insertObject:[self bedlamThriveBurnish:purpsRest] atIndex:4];
+                } else {
+                    [self.chicImplementLookArray addObject:[self bedlamThriveBurnish:purpsRest]];
+                }
             }
             NSArray *ccdntSort = [NdrdonSlatyWashdayManager ecrCorkedLash];
             if (ccdntSort.count > 0) {
@@ -675,13 +692,14 @@
     return _lctResidentTreeArray;
 }
 
-- (YYLabel *)titleLabel {
-    if (!_titleLabel) {
-        _titleLabel = [[YYLabel alloc] init];
-        _titleLabel.hidden = YES;
-        _titleLabel.numberOfLines = 0;
+- (YYLabel *)rchAccuracyWideLabel {
+    
+    if (!_rchAccuracyWideLabel) {
+        _rchAccuracyWideLabel = [[YYLabel alloc] init];
+        _rchAccuracyWideLabel.hidden = YES;
+        _rchAccuracyWideLabel.numberOfLines = 0;
     }
-    return _titleLabel;
+    return _rchAccuracyWideLabel;
 }
 
 @end
